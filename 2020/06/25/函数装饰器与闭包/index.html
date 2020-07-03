@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>函数装饰器与闭包 - ~(0_0)~</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="https://user-hrsat.github.io/2020/06/25/%E5%87%BD%E6%95%B0%E8%A3%85%E9%A5%B0%E5%99%A8%E4%B8%8E%E9%97%AD%E5%8C%85/">
+<link rel="icon" type="image/x-icon" href="/img/logo.jpeg">
+
+<meta name="description" content="函数装饰器与闭包原理—装饰器的定义— 12345    装饰器是可调用的对象，其参数是另一个函数(被装饰的函数)。装饰器可能处理被装饰的函数，然后把它返回，或者将其替换成另一个函数或可调用对象。    函数装饰器用于在源码中“标记”函数，以某种方式增强函数的行为。    想要自己实现装饰器，就需要了解闭包，也需要知道nonlocal。 装饰器只是语法糖。有时会很方便，比如元编程  —装饰器的特性—">
+<meta property="og:type" content="website">
+<meta property="og:title" content="函数装饰器与闭包">
+<meta property="og:url" content="https://user-hrsat.github.io/2020/06/25/%E5%87%BD%E6%95%B0%E8%A3%85%E9%A5%B0%E5%99%A8%E4%B8%8E%E9%97%AD%E5%8C%85/index.html">
+<meta property="og:site_name" content="~(0_0)~">
+<meta property="og:description" content="函数装饰器与闭包原理—装饰器的定义— 12345    装饰器是可调用的对象，其参数是另一个函数(被装饰的函数)。装饰器可能处理被装饰的函数，然后把它返回，或者将其替换成另一个函数或可调用对象。    函数装饰器用于在源码中“标记”函数，以某种方式增强函数的行为。    想要自己实现装饰器，就需要了解闭包，也需要知道nonlocal。 装饰器只是语法糖。有时会很方便，比如元编程  —装饰器的特性—">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://user-hrsat.github.io/img/logo.jpeg">
+<meta property="article:published_time" content="2020-06-25T03:58:04.000Z">
+<meta property="article:modified_time" content="2020-06-25T03:58:04.000Z">
+<meta property="article:author" content="User-Hrsat">
+<meta property="article:tag" content="学习总结">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-hrsat.github.io/img/logo.jpeg">
+
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"User-Hrsat","description":"自己的学习笔记,日常琐碎","image":"https://user-hrsat.github.io/img/logo.jpeg"},"url":"https://user-hrsat.github.io","image":"https://user-hrsat.github.io/img/logo.jpeg","description":"自己的学习笔记,日常琐碎","author":{"@type":"Person","name":"User-Hrsat","description":"自己的学习笔记,日常琐碎","image":"https://user-hrsat.github.io/img/logo.jpeg"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"}},{"@context":"http://schema.org","@type":"Article","articleSection":"流畅的Python","url":"https://user-hrsat.github.io/2020/06/25/%E5%87%BD%E6%95%B0%E8%A3%85%E9%A5%B0%E5%99%A8%E4%B8%8E%E9%97%AD%E5%8C%85/","headline":"函数装饰器与闭包","image":"https://user-hrsat.github.io/img/logo.jpeg","datePublished":"2020-06-25T03:58:04.000Z","dateModified":"2020-06-25T03:58:04.000Z","keywords":"学习总结","description":"自己的学习笔记,日常琐碎","publisher":{"@type":"Organization","name":"~(0_0)~","logo":{"@type":"ImageObject","url":"https://user-hrsat.github.io/img/logo.jpeg"}},"author":{"@type":"Person","name":"User-Hrsat","description":"自己的学习笔记,日常琐碎","image":"https://user-hrsat.github.io/img/logo.jpeg"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://user-hrsat.github.io/2020/06/25/%E5%87%BD%E6%95%B0%E8%A3%85%E9%A5%B0%E5%99%A8%E4%B8%8E%E9%97%AD%E5%8C%85/"}}]</script>
+
+
+<link rel="alternate" type="application/atom+xml" title="~(0_0)~" href="/atom.xml">
+
+<link href="/styles.e4c22be5bb2c26eab146.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/theme.fab902cd80c7d26e6d10.css" is="theme">
+
+
+<script src="/config.89a8241afb9823293eb9.js"></script>
+
+
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','UA-00000000-0');</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body lang="zh-Hans">
+<is-a></is-a>
+<script src="/runtime.1720a40670866f12654e.js"></script>
+<script src="/polyfills.69a7b8a907a7ac9da988.js"></script>
+<script src="/main.12c3a04fa47641f902c2.js"></script>
+</body>
+</html>
