@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://user-hrsat.github.io/"/>
-  <updated>2020-09-08T13:36:30.000Z</updated>
+  <updated>2020-11-22T10:25:51.000Z</updated>
   <id>https://user-hrsat.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浅拷贝与深拷贝</title>
+    <link href="https://user-hrsat.github.io/2020/11/22/deepcopy/"/>
+    <id>https://user-hrsat.github.io/2020/11/22/deepcopy/</id>
+    <published>2020-11-22T10:25:51.000Z</published>
+    <updated>2020-11-22T10:25:51.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;浅拷贝与深拷贝&quot;&gt;浅拷贝与深拷贝&lt;a href=&quot;#浅拷贝与深拷贝&quot; title=&quot;浅拷贝与深拷贝&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&quot;引导&quot;&gt;引导&lt;a href=&quot;#引导&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="基础" scheme="https://user-hrsat.github.io/categories/%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Python" scheme="https://user-hrsat.github.io/tags/Python/"/>
+    
+      <category term="基础" scheme="https://user-hrsat.github.io/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>Django</title>
